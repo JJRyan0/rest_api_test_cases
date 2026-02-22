@@ -26,8 +26,8 @@ pm.test("Response time is acceptable", function() {
 
 
 // What This Does:
-// pm.test("Response time is acceptable", function () {...}) → A test to measure response time.
-//pm.expect(pm.response.responseTime).to.be.below(1000); → Ensures that the API request completes in under 1000ms (1 second).
+// pm.test("Response time is acceptable", function () {...}) A test to measure response time.
+//pm.expect(pm.response.responseTime).to.be.below(1000); Ensures that the API request completes in under 1000ms (1 second).
 
 //Test 3: Validate JSON Response Structure
 let jsonData = pm.response.json();
@@ -83,7 +83,7 @@ pm.test("Ensure no duplicate IDs in hits", function () {
 });
 
 // Test 7: Validate Image URLs are Reachable
-//Ensures that image URLs provided in the response (e.g., previewURL, largeImageURL) actually exist.
+//Ensures that image URLs provided in the response (e.g previewURL, largeImageURL) actually exist.
 //Makes a separate HTTP request to each image URL to confirm it is reachable (returns a 200 status).
 
 let jsonData = pm.response.json();
